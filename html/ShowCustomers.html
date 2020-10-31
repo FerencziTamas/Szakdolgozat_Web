@@ -1,0 +1,19 @@
+<button onclick="topFunction()" id="felgomb">▲</button>
+<div class="Vevok">
+    <h1 class="erdokCim">Jelenlegi vevők</h1>
+    <p class="erdokSzoveg">Az alábbi listában láthatóak az adatbázisban jelenleg tárolt vevők és azok adatait!</p>
+    <form action="ShowCustomers.php" method="POST">
+        <div>
+            <input type="radio" name="csokkeno2">
+            <label for="csokkeno2" class="radio"> CSÖKKENŐ </label>
+            <input type="radio"  name="novekvo2">
+            <label for="novekvo2" class="radio"> NÖVEKVŐ </label>
+            <input type="submit" class="btn btn-primary" value="Rendez">
+        </div>
+    </form> 
+    <form action="SearchCustomers.php" method="POST">
+        <label class="radio">Adja meg a keresendő vevő nevét:</label>
+        <input type="text" name="keres">
+        <input type="submit" class="btn btn-primary" value="Keresés">
+    </form>
+</div>

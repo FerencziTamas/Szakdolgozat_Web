@@ -1,0 +1,23 @@
+<button onclick="topFunction()" id="felgomb">▲</button>
+<div class="Erdok">
+    <h1 class="erdokCim">Jelenlegi erdők</h1>
+    <p class="erdokSzoveg">Az alábbi listában láthatóak az adatbázisban jelenleg tárolt erdők és azok adatait!</p>
+    <form action="ShowForests.php" method="POST">
+        <div class="radiok">
+            <input type="radio" name="kor" value="kor">
+            <label for="kor">Kor</label>
+            <input type="radio" name="terulet" value="terulet">
+            <label for="terulet">Terület</label>
+        </div>
+
+        <div class="rendezes">
+            <input type="radio"  name="csokkeno">
+            <label for="vehicle1"> CSÖKKENŐ </label>
+            <input type="radio"  name="novekvo">
+            <label for="vehicle2"> NÖVEKVŐ </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Rendezés</button>
+    </form> 
+</div>
+
+
